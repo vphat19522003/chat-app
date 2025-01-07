@@ -13,7 +13,7 @@ const authRoutes = Router();
 authRoutes.post("/signup", SignUpController);
 authRoutes.post("/login", LoginController);
 authRoutes.post("/logout", LogoutController);
-authRoutes.patch("/updateProfile", protectedRoute, updateProfileController);
+authRoutes.put("/updateProfile", protectedRoute, updateProfileController);
 authRoutes.get("/check", protectedRoute, checkAuth);
 
 export default authRoutes;
